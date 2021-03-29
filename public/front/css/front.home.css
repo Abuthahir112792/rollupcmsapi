@@ -1,0 +1,203 @@
+
+/* Styles for the circle buttons in home page */
+.home-circle-icon{
+    width: 60px;
+    height: 60px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.cicle-policy{
+    background-color: #ffe089;
+}
+.cicle-terms{
+    background-color: #ffb8b8;
+}
+.cicle-feedback{
+    background-color: #addcff;
+}
+.cicle-refer{
+    background-color: #8dffa6;
+}
+
+
+.language-selector{
+    background: none;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #717171 !important;
+}
+
+.logout{
+    font-size: 13px !important;
+    color: #4a4a4a !important;
+}
+
+.login-register{
+    font-size: 1rem !important;
+    color: #4a4a4a !important;
+}
+
+
+.delivery-method{
+    display: flex;
+    justify-content: space-around;
+}
+
+.delivery-method-item{
+    padding: 20px;
+    border-radius: 5px;
+    width: 120px;
+    color: #416230;
+}
+
+.delivery-method-item>i{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.delivery-method-item>div{
+    font-size: 1.2rem;
+}
+
+.delivery-method-active{
+    background-color: #AEC645;
+    color: white;
+}
+
+
+
+.pending-orders-title{
+    font-size: 2rem;
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000a1;
+}
+
+.pending-order-item{
+    width: 320px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.14);
+    margin: 10px 0px 10px 2px;
+    border-radius: 7px;
+    min-height: 80px;
+    position: relative;
+}
+
+.pending-ord-id{
+    font-size:1.4rem;
+    padding: 20px;
+}
+.pending-ord-id span{
+    font-weight: bolder;
+}
+
+
+
+.pending-order-date{
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    bottom: 10px;
+    right: 40px;
+    color: grey;
+}
+
+.pending-order-arrow{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    font-size: 20px;
+    color: #787878;
+}
+
+.owl-carousel-pending-orders,.owl-carousel-image{
+    touch-action: manipulation;
+}
+
+
+.owl-carousel-pending-orders>.owl-nav{
+    display: none;
+}
+
+.pending-order-self-pickup-status{
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+    color: red;
+}
+
+.home-header{
+    background-image: url('../../front/images/home-page-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.home-header img{
+    position: relative;
+    bottom: -70px;
+}
+
+.login-logout{
+    background-color: white !important;
+    padding: 2px 20px;
+    border-radius: 20px;
+    display: inline-table;
+}
+
+
+.order-int-voice{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.place-order-title{
+    display: flex;
+    color: var(--primary-color);
+}
+.place-order-title b{
+    font-weight: 900;
+}
+
+.order-input input{
+    border-bottom: 3px solid var(--primary-color);
+}
+
+
+
+
+/* Dynamic styles for pendignorder
+.rtl.owl-stage-outer{
+    position:relative !important;
+    overflow:hidden !important;
+    transform:translate3d(0,0,0) !important;
+    direction: ltr !important;
+   }
+
+   .rtl.owl-carousel .owl-item,
+   .rtl.owl-wrapper {
+    float: right !important;
+} */
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .circle-text {
+        font-size: 13px;
+    }
+  }

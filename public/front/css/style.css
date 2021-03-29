@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #416230;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    height: 70px;
+    margin-bottom: 30px;
+}
+.normal-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.group 			  { 
+    position:relative; 
+    margin:45px 0; 
+}
+.input-ct input 				{
+    font-size:18px;
+    padding:10px 10px 10px 25px;
+    display:block;
+    width: 100%;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+.input-ct input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.input-ct label 				 {
+    color:#999; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:25px;
+    top:13px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.input-ct input:focus ~ label, .input-ct input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:var(--primary-color);
+}
+
+/* BOTTOM BARS ================================= */
+.input-ct .bar 	{ position:relative; display:block; width:100%; }
+.input-ct .bar:before, .input-ct .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:var(--primary-color); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+.input-ct .bar:before {
+    left:50%;
+}
+.input-ct .bar:after {
+    right:50%; 
+}
+
+/* active state */
+.input-ct input:focus ~ .bar:before, .input-ct input:focus ~ .bar:after {
+    width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.input-ct .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+.input-ct input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background: var(--primary-color); }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:var(--primary-color); }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:var(--primary-color); }
+    to 	{ width:0; background:transparent; }
+}
+
+.logo{
+    width: 150px;
+    margin: 0 auto;
+}
+.logo img{
+    width: 100%;
+}
+
+.input-ct i{
+    font-size: 25px;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    color: var(--primary-color);
+}
+.mobile-number .country-code{
+    position: absolute;
+    left: 0;
+    bottom: 11px;
+    border: 0;
+}
+.mobile-number i{
+    left: 72px;
+}
+.mobile-number input{
+    width: 86%;
+    margin-left: 70px;
+}
+.mobile-number .highlight{
+    width: 86%;
+    left: 70px;
+}
+.mobile-number .bar{
+    width: 86%;
+    left: 70px;
+}
+.mobile-number label{
+    left: 95px;
+}
+.btn-primary{
+    width: 280px;
+    background-color: #1b88db;
+    border: 0;
+    height: 40px;
+    color: #FFF;
+    border-radius: 30px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.other-links{
+    font-style: italic;
+    font-size: 15px;
+}
+.other-links a{
+    font-style: normal;
+    font-weight: 700;
+}
+.start-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}

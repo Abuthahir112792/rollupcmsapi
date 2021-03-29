@@ -1,0 +1,24 @@
+.divOuter{
+    margin: 40px auto;
+}
+.mobile-number .iti--allow-dropdown .country-code{
+    border-bottom: 1px solid #000;
+}
+.mobile-number .iti--allow-dropdown .country-code:focus{
+    border-bottom: 2px solid #1b88db;
+}
+.mobile-number .iti--allow-dropdown .iti__selected-flag .iti__arrow{
+    display: none;
+}
+
+.profile-container input{
+	border-bottom: 1px solid var(--primary-color) !important;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .mobile-bottom-nav{
+        display: none !important;
+  }
+  
+}

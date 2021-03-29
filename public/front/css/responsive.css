@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #416230;
+}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+    .mobile-number input{
+        width: 100%;
+        margin-left: auto;
+        padding: 10px 10px 10px 125px !important;
+    }
+}
+@media (max-width: 550px){
+    .mobile-number input{
+        width: 100%;
+        margin-left: auto;
+        padding: 10px 10px 10px 125px;
+    }
+    .mobile-number .country-code{
+        bottom: 0;
+        height: 50px;
+        z-index: 1;
+    }
+    .mobile-number .highlight{
+        width: 100%;
+        left: 0px;
+    }
+    .mobile-number .bar{
+        width: 100%;
+        left: 0px;
+    }
+}
